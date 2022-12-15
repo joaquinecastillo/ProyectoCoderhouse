@@ -3,15 +3,19 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>MYFIT</title>
+        <link rel="stylesheet" href="../css/bootstrap.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
         <link a href="../css/styles.css" rel="stylesheet">   
         <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     </head> 
     <body>
         <header class="header">
             <nav class="header__navbar">
-                    <img src="../imagenes/LOGO.png" alt="logoMYFIT" class="header__logo">
+                <a href="../index/index.html">
+                    <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+                </a>
                     <ul class="header__menu">
                         <li><a class="header__menuItem" href="./index.html">INICIO</a></li>                 
                         <li><a class="header__menuItem" href="../pages/asociate.html">ASOCIATE</a></li>
@@ -22,42 +26,46 @@
             </nav>                  
         </header>
 
-        <main class="mainInicio">
-            <section class="mainInicio__sectores">
-                <article>
-                    <img src="../imagenes/sala_musculacion.jpg" class="mainInicio__imagenMusculacion">
+        <main id="mainInicio">
+
+            <section id="mainInicio__sector1">
+
+                <article class="mainInicio__imagenMusculacion">
+                    <img src="../imagenes/sala_musculacion.jpg">
                 </article>
-                <article>
-                <h2 class="mainInicio__sectorMusculacion">Sector Musculación:</h2>
-                <p  class="mainInicio__descripcionMusculacion">Equipado con la mayor variedad y calidad. En musculación podes entrenar tu fuerza con nuestras más de 30 máquinas y 20 estaciones de peso libre. Buscá nuestros planes de entrenamiento para que armes una rutina en base a tus objetivos.</p>
+
+                <article class="mainInicio__musculacion">
+                    <h2 class="animate__fadeInRight">Sector Musculación:</h2>
+                    <p class="animate__fadeInRight">Equipado con la mayor variedad y calidad. En musculación podes entrenar tu fuerza con nuestras más de 30 máquinas y 20 estaciones de peso libre. Buscá nuestros planes de entrenamiento para que armes una rutina en base a tus objetivos.</p>
                 </article>
+                
             </section>
                 
-            <section class="mainInicio__sectores">
-                <article>
-                    <img src="../imagenes/sala_cardio.jpg" class="mainInicio__imagenCardio">
+            <section id="mainInicio__sector2">
+                <article class="mainInicio__imagenCardio">
+                    <img src="../imagenes/sala_cardio.jpg">
                 </article>
-                <article>
-                    <h2 class="mainInicio__sectorCardio" >Sector Cardio:</h2>
-                    <p class="mainInicio__descripcionCardio">¡Nunca viste tantas cintas juntas! Corré, entra en calor o preparate para una carrera con los 75 equipos que tenemos en cada sucursal, todo lo que necesitas para transpirar con tu mejor playlist.</p>
-                </article>
-            </section>
-            <section class="mainInicio__sectores">
-                <article>
-                    <img src="../imagenes/sala_funcional.webp" class="mainInicio__imagenFuncional">
-                </article>
-                <article>
-                    <h2 class="mainInicio__sectorFuncional">Sector Funcional:</h2>
-                    <p class="mainInicio__descripcionFuncional">Entrená para la vida, corregí tu postura al caminar, aplicá cada movimiento a tu día a dí. Sólo necesitas tu cuerpo y algunos alementos. En el sector funcional lo tenes todo. Cómodo y equipado.</p>
+                <article class="mainInicio__cardio">
+                    <h2>Sector Cardio:</h2>
+                    <p>¡Nunca viste tantas cintas juntas! Corré, entra en calor o preparate para una carrera con los 75 equipos que tenemos en cada sucursal, todo lo que necesitas para transpirar con tu mejor playlist.</p>
                 </article>
             </section>
-            <section class="mainInicio__sectores">
-                <article class="mainInicio__sectores">
-                <img src="../imagenes/sala_aerobicos.JPG" class="mainInicio__imagenAerobicos">
+            <section id="mainInicio__sector3">
+                <article class="mainInicio__imagenFuncional">
+                    <img src="../imagenes/sala_funcional.webp">
+                </article>
+                <article class="mainInicio__funcional">
+                    <h2>Sector Funcional:</h2>
+                    <p>Entrená para la vida, corregí tu postura al caminar, aplicá cada movimiento a tu día a dí. Sólo necesitas tu cuerpo y algunos alementos. En el sector funcional lo tenes todo. Cómodo y equipado.</p>
+                </article>
+            </section>
+            <section id="mainInicio__sector4">
+                <article class="mainInicio__imagenAerobicos">
+                <img src="../imagenes/sala_aerobicos.JPG">
             </article>
-            <article>
-                <h2 class="mainInicio__sectorAerobicos">Sector de Aeróbicos:</h2>
-                <p class="mainInicio__descripcionAerobicos">¿Viste cuando querés desconectar por completo? Cuando entras al salón ocurre eso.Vení a participar de cualquiera de nuestras clases. Bailá en la clase de Ritmos, transpira con una sesión de Aero Local o relajá practicando Yoga.</p>
+            <article class="mainInicio__aerobicos">
+                <h2>Sector de Aeróbicos:</h2>
+                <p>¿Viste cuando querés desconectar por completo? Cuando entras al salón ocurre eso.Vení a participar de cualquiera de nuestras clases. Bailá en la clase de Ritmos, transpira con una sesión de Aero Local o relajá practicando Yoga.</p>
             </article>
             </section>   
         </main>
@@ -90,5 +98,7 @@
                 </p> 
             </div>        
         </footer>
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+        <script src="../js/bootstrap.bundle.js"></script>
     </body>    
 </html>

@@ -3,15 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MYFIT</title>
     <link a href="../CSS/styles.css" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head> 
 <body>
     <header class="header">
         <nav class="header__navbar">
-            <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            <a href="../index/index.html">
+                <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            </a>
                 <ul class="header__menu">
                     <li><a class="header__menuItem" href="../index/index.html">INICIO</a></li>                 
                     <li><a class="header__menuItem" href="./asociate.html">ASOCIATE</a></li>
@@ -22,29 +25,47 @@
         </nav>                  
     </header>
 
-    <main class="mainSedes">
-        <section class="mainSedes__subtituloPrincipalCentrado">
-            <h2 class="mainSedes__subtituloPrincipal">SEDES MYFIT</h2>
+    <main id="mainSedes">
+
+        <section class="mainSedes__subtituloPrincipal">
+
+            <h2 class="animate__fadeInDown">SEDES MYFIT</h2>
+
         </section>
-        <section>
-            <article>
-                <div>
-                    <img  class="mainSedes__sucursal" src="../iconos_svg/bxs-ubicacion.svg"></img></li>                  
-                    <h3 class="mainSedes__subtituloSecundario">ABASTO</h3>
+
+        <section id="mainSedes__sucursales">
+
+            <article class="mainSedes__sede1">
+
+                <div class="mainSedes__abasto">
+
+                    <img class="mainSedes__logomapa" src="../iconos_svg/bxs-ubicacion.svg"></img></li>                  
+                    <h3 class="mainSedes__tituloAbasto">ABASTO</h3>
+
                 </div>
-                <p>Av. Corrientes 3234, CABA</p>
-                <p>Lunes a viernes 7 a 23 hs.</p>
-                <p>Sábados de 8 a 20 hs.</p>
+                
+                <div class="mainSedes__Abasto">
+
+                    <p>Av. Corrientes 3234, CABA</p>
+                    <p>Lunes a viernes 7 a 23 hs.</p>
+                    <p>Sábados de 8 a 20 hs.</p>
+                    
+                </div>   
+
             </article>
-            <article>
+
+            <article class="mainSedes__sede2">
+
                 <div>
-                    <img  class="mainSedes__sucursal" src="../iconos_svg/bxs-ubicacion.svg"></img></li>
-                    <h3 class="mainSedes__subtituloSecundario">PALERMO</h3>
+                    <img  class="mainSedes__logomapa" src="../iconos_svg/bxs-ubicacion.svg"></img></li>
+                    <h3 class="mainSedes__tituloPalermo">PALERMO</h3>
                 </div>
                 <p>Mansilla 2929, CABA</p>
                 <p>Lunes a viernes 7 a 22.30 hs.</p>
                 <p>Sábados 8 a 20 hs.</p>
+
             </article>
+
         </section>
     </main>
 
@@ -75,6 +96,8 @@
                 MYFIT<img class="copyright" src="../iconos_svg/bx-copyright.svg">copyright 2022  | Desarrollado por <strong>Joaquín Castillo</strong>
             </p> 
         </div>        
-    </footer>   
+    </footer>  
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

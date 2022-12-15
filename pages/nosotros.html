@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MYFIT</title>
-    <link a href="../css/styles.css" rel="stylesheet">   
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link a href="../CSS/styles.css" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head> 
 <body>
     <header class="header">
         <nav class="header__navbar">
-            <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            <a href="../index/index.html">
+                <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            </a>
                 <ul class="header__menu">
                     <li><a class="header__menuItem" href="../index/index.html">INICIO</a></li>                 
                     <li><a class="header__menuItem" href="./asociate.html">ASOCIATE</a></li>
@@ -21,23 +25,29 @@
                 </ul>                                                     
         </nav>                  
     </header>
-    <main class="mainNosotros">
 
-        <section class="mainNosotros__subtituloPrincipalContenedor">
-            <h2 class="mainNosotros__subtituloPrincipal">Sobre nosotros</h2>
+    <main id="mainNosotros">
+
+        <section class="mainNosotros__tituloPrincipal">
+            <h2 class="animate__fadeInDown">SOBRE NOSOTROS</h2>
         </section>
-        <section>
-            <h3 class="mainNosotros__subtituloSecundario">Nuestra misión</h3>
+        
+        <section  class="mainNosotros__tituloSecundario">
+            <h3>Nuestra misión</h3>
         </section>
-        <section>
-            <p class="mainNosotros__parrafos">Mejorar la calidad de vida de las personas a través de la actividad física, el desarrollo de vínculos sociales y la promoción de hábitos saludables por medio de una amplia oferta de actividades.</p>
+
+        <section class="mainNosotros__parrafos">
+            <p>Mejorar la calidad de vida de las personas a través de la actividad física, el desarrollo de vínculos sociales y la promoción de hábitos saludables por medio de una amplia oferta de actividades.</p>
         </section>
+        
         <section>
-            <article>
-                <h3 class="mainNosotros__subtituloSecundario">Nuestros valores</h3>
+
+            <article class="mainNosotros__tituloSecundario">
+                <h3>Nuestros valores</h3>
             </article>
-            <article>
-                <ul class="mainNosotros__listaDesordenada">
+
+            <article class="mainNosotros__listaDesordenada">
+                <ul>
                     <li class="mainNosotros__item">Sinergia</li>
                     <li class="mainNosotros__item">Innovación</li>
                     <li class="mainNosotros__item">Profesionalismo</li>
@@ -49,14 +59,17 @@
                 </ul>
             </article>
         </section>
-        <section>
-            <h3 class="mainNosotros__subtituloSecundario">Sobre nosotros</h3>
+        
+        <section class="mainNosotros__tituloSecundario">
+            <h3>Sobre nosotros</h3>
         </section>
-        <section>
-            <p class="mainNosotros__parrafos">Somos una pequeña cadena de gimnasio, enfocados en la salud física y mental, por eso cremos que el deporte es fundamental para el buen funcionamiento de ambas. En MyFit te ofrecemos variedad en actividad fisica para que cuidar de tu salud no sea aburrido, ¡Tenemos para todos los gustos! desde sala de Musculación hasta Ritmos y Yoga.
+
+        <section  class="mainNosotros__parrafos">
+            <p>Somos una pequeña cadena de gimnasio, enfocados en la salud física y mental, por eso cremos que el deporte es fundamental para el buen funcionamiento de ambas. En MyFit te ofrecemos variedad en actividad fisica para que cuidar de tu salud no sea aburrido, ¡Tenemos para todos los gustos! desde sala de Musculación hasta Ritmos y Yoga.
             En MyFit vas a encontrar un grupo cálido de gente dispuesta a brindarte la ayuda y el asesoramiento que necesites. 
             En Musculación con cualquiera de los planes, incluye una rutina de entrenamientos específica para vos.</p>
         </section>
+
     </main>
 
         <footer class="footer">
@@ -87,5 +100,7 @@
                 </p> 
             </div>        
         </footer>
+        <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+        <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>

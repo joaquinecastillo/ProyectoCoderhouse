@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MYFIT</title>
-    <link a href="../css/styles.css" rel="stylesheet">   
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link a href="../CSS/styles.css" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 </head> 
 <body>
     <header class="header">
         <nav class="header__navbar">
-            <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            <a href="../index/index.html">
+                <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            </a>
                 <ul class="header__menu">
                     <li><a class="header__menuItem" href="../index/index.html">INICIO</a></li>                 
                     <li><a class="header__menuItem" href="./asociate.html">ASOCIATE</a></li>
@@ -22,94 +26,101 @@
         </nav>                  
     </header>
 
-    <main class="mainAsociate">
-        <section class="mainAsociate__subtitulos">
-            <article>
-                <h2 class="mainAsociate__subtituloPrincipal" class="animate__fadeInDown">¡EMPEZÁ A ENTRENAR!</h2>
+    <main id="mainAsociate">
+        <!-- seguir por aca -->
+        <section id="mainAsociate__subtitulos">
+
+            <article class="mainAsociate__empezaAentrenar">
+                <h2 class="animate__fadeInDown">¡EMPEZÁ A ENTRENAR!</h2>
             </article>
-            <article>
-                <h3 class="mainAsociate__subtituloSecundario">COMPLETA TUS DATOS:</h3>
-            </article>                   
+
+            <article  class="mainAsociate__completaTusDatos">
+                <h3>COMPLETA TUS DATOS:</h3>
+            </article>
+
         </section>
         
-        <section class="mainAsociate__formulario">
+        <section id="mainAsociate__formulario">
 
-            <div class="mainAsociate__nombreApellido">
-                <article class="mainAsociate__nombre">
-                    <h3>Nombre</h3>
-                </article>
-                <article class="mainAsociate__apellido">
-                    <h3>Apellido</h3>                   
-                </article>                
-            </div>
-            <div class="mainAsociate__nombreApellidoInput">
-                <article>
-                    <input class="mainAsociate__input" type="text" name="name" id="text">
-                </article>
-                <article>
-                    <input class="mainAsociate__input"type="text" name="adress" id="adress">
-                </article>                
-            </div>
-            <div class="mainAsociate__correoContraseña">
-                <article class="mainAsociate__correo">
-                    <h3 class="correo">Correo electrónico</h3>
-                </article>
-                <article class="mainAsociate__contraseña">
-                    <h3>Contraseña</h3>                                      
-                </article>                    
-            </div>
-            <div class="mainAsociate__correoContraseñaInput"> 
-                <article>
-                    <input class="mainAsociate__input" type="mail" name="user" id="user"> 
-                </article>
-                <article>
-                    <input class="mainAsociate__input" type="text" name="password" id="password">
-                </article>                
-            </div>
-            <div class="mainAsociate__dniGenero"> 
-                <article class="mainAsociate__dni">
-                    <h3>DNI</h3>
-                </article>
-                <article class="mainAsociate__genero">
-                    <h3>Género</h3>                                     
-                </article>                   
-            </div>
-            <div class="mainAsociate__dniGeneroInput">
-                <article>
-                    <input class="mainAsociate__input" type="text" name="dni" id="dni">
-                </article>
-                <article>
-                    <select class="mainAsociate__input" value="generos" name="genero" id="genero">
-                        <option value="genero">seleccione su género</option>
-                        <option value="genero">masculino</option>
-                        <option value="genero">femenino</option>
-                    </select>
-                </article>               
-            </div>
-            <div class="mainAsociate__sucursalPlan">
-                <article class="mainAsociate__sucursal">
-                    <h3>Sucursal</h3>
-                </article>
-                <article class="mainAsociate__plan">
-                    <h3>PLAN</h3>                  
-                </article>                   
-            </div>
-            <div class="mainAsociate__sucursalPlanInput">
-                <article>
-                    <select class="mainAsociate__input" value="sucursales" name="sucursal" id="sucursales">
-                        <option value="sucursales">Seleccione sucursal</option>
-                        <option value="surcurales">Abasto</option>
-                        <option value="sucursales">Palermo</option>                        
-                    </select>
-                </article>
-                <article>
-                    <select class="mainAsociate__input" value="planes "name="plan" id="plan">
-                        <option value="plan">seleccione su plan</option>
-                        <option value="plan">plan 1</option>
-                        <option value="plan">plan 2</option>
-                    </select>
-                </article>               
-            </div>
+            <article class="mainAsociate__nombre">
+                <h3>Nombre</h3>
+            </article>
+
+            <article class="mainAsociate__apellido">
+                <h3>Apellido</h3>                   
+            </article>
+ 
+            <article class="mainAsociate__nombreInput">
+                <input class="mainAsociate__input" type="text" name="name" id="text">
+            </article>
+
+            <article class="mainAsociate__apellidoInput">
+                <input class="mainAsociate__input"type="text" name="adress" id="adress">
+            </article>                
+
+            <article class="mainAsociate__correo">
+                <h3 class="correo">Correo electrónico</h3>
+            </article>
+
+            <article class="mainAsociate__contraseña">
+                <h3>Contraseña</h3>                                      
+            </article>                    
+ 
+            <article class="mainaAsociate__inputCorreo">
+                <input class="mainAsociate__input" type="mail" name="user" id="user"> 
+            </article>
+
+            <article class="mainAsociate__inputContraseña">
+                <input class="mainAsociate__input" type="text" name="password" id="password">
+            </article>                
+            
+            <article class="mainAsociate__dni">
+                <h3>DNI</h3>
+            </article>
+
+            <article class="mainAsociate__genero">
+                <h3>Género</h3>                                     
+            </article>                   
+                   
+            <article class="mainAsociate__inputDni">
+                <input class="mainAsociate__input" type="text" name="dni" id="dni">
+            </article>
+
+            <article class="mainAsociate__inputGenero">
+                <select class="mainAsociate__input" value="generos" name="genero" id="genero">
+                    <option value="genero">SELECCIONE GÉNERO</option>
+                    <option value="genero">MASCULINO</option>
+                    <option value="genero">FEMENINO</option>
+                </select>
+            </article>               
+            
+            <article class="mainAsociate__sucursal">
+                <h3>Sucursal</h3>
+            </article>
+
+            <article class="mainAsociate__plan">
+                <h3>PLAN</h3>                  
+            </article>                   
+
+            <article class="mainAsociate__inputSucursal">
+                <select class="mainAsociate__input" value="sucursales" name="sucursal" id="sucursales">
+                    <option value="sucursales">SELECCIONE SUCURSAL</option>
+                    <option value="surcurales">ABASTO</option>
+                    <option value="sucursales">PALERMO</option>                        
+                </select>
+            </article>
+
+            <article class="mainAsociate__inputPlan">
+                <select class="mainAsociate__input" value="planes "name="plan" id="plan">
+                    <option value="plan">SELECCIONE PLAN</option>
+                    <option value="plan">PLAN PREMIUM</option>
+                    <option value="plan">PLAN BASIC</option>
+                </select>
+            </article>               
+            
+            <div id="liveAlertPlaceholder"><strong>¡Listo!</strong> Creaste tu cuenta con éxito.</div>
+            <button type="button" class="btn btn-primary" id="liveAlertBtn">Crear cuenta.</button>
+
         </section>
         
     </main>
@@ -142,5 +153,7 @@
             </p> 
         </div>        
     </footer>
+
+    <script src="../js/bootstrap.bundle.js"></script> 
 </body>
 </html>

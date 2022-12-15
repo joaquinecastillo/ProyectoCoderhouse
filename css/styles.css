@@ -1,16 +1,12 @@
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;    
-}
 
 body {
     background-color: #CCCDC5;
     font-family: 'Montserrat', sans-serif;
     width: 100%;
-    position: absolute;
-    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 250px;
+    /* overflow-x: hidden; oculta la barra de desplazamienteo en eje x*/
 }
 
 .header {
@@ -38,14 +34,16 @@ body {
     display: flex;
 }
 
-header nav ul li {
-    
+header nav ul li {  
     margin-left: 50px;
     margin-top: 40px;
     position: relative;
-
     font-weight: bold;
     list-style-type: none;
+}
+
+a:hover {
+    color: #ffffff;
 }
 
 .header__menuItem {
@@ -53,497 +51,422 @@ header nav ul li {
     color: #D7C7FF;
 }
 
-.mainIncio {
+#mainInicio {
+    position: relative;
     width: 100%;
-    position: relative;
-    margin: 0;
-}
-
-.mainInicio section article img {
-    width: 700px;
     height: 500px;
-    margin: 100px 100px 0 0;
-    position: relative;
+    padding-top: 100px;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 
-main section article h2 {
-    font-size: 24px;
-    position: absolute;
-    margin-left: 850px;
-    margin-right: 100px;
-    margin-top: -400px;
-    display: inline;
+#mainInicio__sector1 {
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-right: 100px;
 }
 
-main section article p {
-    font-size: 16px;
-    position: absolute;
-    margin-top: -350px;     
-    margin-left: 850px;
-    margin-right: 100px;
-    display: inline;
+.mainInicio__imagenMusculacion img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainInicio__musculacion h2 {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.mainInicio__musculacion p {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 50px;
     text-align: justify;
 }
 
-.mainAsociate {
-    position: relative;
+.animate__fadeInRight {
+    animation: bounce;
+    animation-duration: 2s;
+}
+
+#mainInicio__sector2 {
     width: 100%;
-    height: 2000px;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-right: 100px;
 }
 
-.mainAsociate__subtitulos {
-    display:flex;
+.mainInicio__imagenCardio img {
+    width: 100%;
+    height: 100%;
 }
 
-.mainAsociate .mainAsociate__subtitulos .mainAsociate__subtituloPrincipal {
-    margin: 200px 0 0 100px;
-    width: auto;
-    position: absolute;
-    display: flex;
-    font-size: 48px;
-    font-weight: bold;
+.mainInicio__cardio h2 {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    text-align: center;
 }
 
-.mainAsociate .mainAsociate__subtitulos .mainAsociate__subtituloSecundario {
-    margin: 300px 0 0 100px;
-    position: absolute;
-    display: flex;
-    font-size: 36px;
-    font-weight: bold;
+.mainInicio__cardio p {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+#mainInicio__sector3 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+.mainInicio__imagenFuncional img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainInicio__funcional h2 {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    text-align: center;
+}
+.mainInicio__funcional p {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: justify;
+}
+
+#mainInicio__sector4 {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-right: 100px;
+}
+
+.mainInicio__imagenAerobicos img {
+    width: 100%;
+    height: 100%;
+}
+
+.mainInicio__aerobicos h2 {
+    width: 100%;
+    height: auto;
+    padding-left: 50px;
+    text-align: center;
+}
+
+.mainInicio__aerobicos p {
+    width: 100%;
+    height: auto;
+    padding-top: 50px;
+    padding-left: 50px;
+    text-align: justify;
 }
 
 
-.mainAsociate__formulario {
-    font-size: 24px;
-    margin: 450px 100px 0 100px;
+#mainAsociate {
     position: relative;
-    display: flex;
-    flex-direction: column;
     width: auto;
+    height: auto;
+    padding: 150px 100px 200px 100px;
 }
 
-
-.mainAsociate__nombreApellido {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-
+#mainAsociate__subtitulos {
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-top: 50px;
+    padding-right: 100px;
 }
+
+.mainAsociate__empezaAentrenar {
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.mainAsociate__completaTusDatos {
+    font-size: 24px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+#mainAsociate__formulario {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(8, 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr);
+    height: auto;
+    font-size: 20px;
+}
+
 .mainAsociate__nombre {
-    display: flex;
-    flex-direction: row;
-    margin-right: 500px;
+    padding: 25px 0;
 }
 
 .mainAsociate__apellido {
-    display: flex;
-    flex-direction: row;
-    margin-right: 550px;
-}
-
-
-.mainAsociate__nombreApellidoInput {
-    display:flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-}
-
-.mainAsociate__correoContraseña {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-    
-}
-
-.mainAsociate__correo {
-    display:flex;
-    flex-direction: row;
-    margin-right: 315px;   
-}
-
-.correo {
-    width: 300px;
-}
-
-.mainAsociate__contraseña {
-    display:flex;
-    flex-direction: row;
-    margin-right: 550px;
-}
-
-.mainAsociate__correoContraseñaInput {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-}
-
-.mainAsociate__dniGenero {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.mainAsociate__dniGeneroInput {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
-}
-
-.mainAsociate__dni {
-    display: flex;
-    flex-direction: row;
-    margin-right: 560px;
-}
-
-.mainAsociate__genero {
-    display: flex;
-    flex-direction: row;
-    margin-right: 550px;
-}
-
-.mainAsociate__sucursalPlan {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 20px;
-}
-
-.mainAsociate__sucursal {
-    display: flex;
-    flex-direction: row;
-    margin-right: 500px;
-}
-
-.mainAsociate__plan {
-    display: flex;
-    flex-direction: row;
-    margin-right: 550px;
-}
-
-.mainAsociate__sucursalPlanInput {
-    display: flex;
-    flex-direction: row;
-    margin-bottom: 100px;
+    padding: 25px 0;
 }
 
 .mainAsociate__input {
-    display: flex;
-    flex-direction: row;
-    margin-right: 60px;
-    width: 540px;
-    height: 100px;
-    background-color: #d9d9d9;
-    border-radius: 30px;
-    font-size: 24px;
+    width: 280px;
+    height: 30px;
+    border-radius: 8px;
+    font-size: 20px;
     font-family: 'Montserrat', sans-serif;
-    color: black;
-    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.mainAsociate__correo {
+    padding: 25px 0;
+}
+
+.mainAsociate__contraseña {
+    padding: 25px 0;
+}
+
+.mainAsociate__dni {
+    padding: 25px 0;
+}
+
+.mainAsociate__genero {
+    padding: 25px 0;
+}
+
+#liveAlertPlaceholder {
+    position: relative;
+    width: 400px;
+    left: 400px;
+}
+
+#liveAlertBtn {
+    position: relative;
+    top: 50px;
+    width: 200px;
+    height: 50px;
+    border-radius: 40px;
 }
 
 
-.mainSedes {
-    position: relative;
-    width: 100%;
-    height: 2000px;
+#mainSedes {
+    padding: 150px 100px 200px 100px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
 }
 
 .mainSedes__subtituloPrincipal {
-    margin: 180px 0 0 100px;
-    width: auto;
-    position: absolute;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    font-size: 30px;
+    text-align: center;
 }
 
-.mainSedes__subtituloPrincipalCentrado {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    font-size: 48px;
-    font-weight: bold;
+#mainSedes__sucursales {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 5fr;
+    padding-top: 50px;
 }
 
-.mainSedes__subtituloSecundario {
-    display: flex;
-    flex-direction: column;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 370px auto 25px 130px;
+.mainSedes__sede1 {
+    display: grid;
+    font-size: 26px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5fr;
 }
 
-.mainSedes__sucursal {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-    left: 100px;
+.mainSedes__tituloAbasto {
+    padding-bottom: 50px;
 }
 
-.mainSedes p {
-    position: relative;
-    display:flex;
-    flex-direction: column;
-    margin: 25px auto 25px 100px;
+.mainSedes__sede1 p {
+    font-size: 18px;
 }
 
-.mainActividades {
-    position: relative;
-    width: 100%;
-    height: 1800px;
+.mainSedes__sede2 {
+    
 }
 
-.mainActividades__subtituloPrincipal {
-    margin: 180px 100px 0 100px;
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    width: 1000px;
-    font-size: 36px;
+img .mainSedes__logomapa {
+    height: 50px;
+    width: 50px;
 }
 
-.mainActividades__subtituloPrincipal h2 {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+.mainSedes__tituloPalermo {
+    font-size: 26px;
+    padding-bottom: 50px;
 }
 
-.mainActividades__entrenamientoFuncionalAeroLocal {
-    margin: 250px auto 50px 100px;
-    display: flex;
-    flex-direction: row;
-    font-size: 36px;
+.mainSedes__sede2 p {
+    font-size: 18px;
 }
 
-.mainActividades__entrenamientoFuncional {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+#mainActividades {
+    padding: 150px 100px 250px 100px;
 }
 
-.mainActividades__aeroLocal {
-    margin-left: 115px;
-    display: flex;
-    flex-direction: row;
-    position: relative;
-}  
-
-.mainActividades__entrenamientoFuncionalAeroLocalDescripciones {
-    display:flex;
-    flex-direction: row;
-    position: absolute;
+#mainActividades__tituloPrincipal {
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.mainActividades__entrenamientoFuncionalAeroLocalDescripcion1 {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 0 100px;
-    position: relative;
-    width: 450px;
+#mainActividades__actividades1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 30px;
+    font-size: 26px;
 }
 
-.mainActividades__entrenamientoFuncionalAeroLocalDescripcion2 {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 0 100px;
-    position: relative;
-    width: 450px;
+#mainActividades__actividades2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 50px;
+    text-align: justify;
 }
 
-.v-line {
-    border-left: #757575 solid thick;
-    height: 1780px;
-    left: 675px;
-    position: absolute;
-    margin-top: 200px;
+.animate__backInLeft-descripcion {
+    padding-right: 50px;
+    font-size: 18px;
 }
 
-.h-line1 {
-    border-top: #757575 solid thick;
-    width: 1100px;
-    position: absolute;
-    margin: 150px 100px 0 100px;
+.animate__backInRight-descripcion {
+    font-size: 18px;
 }
 
-.h-line2 {
-    border-top: #757575 solid thick;
-    width: 1100px;
-    position: absolute;
-    margin: 150px 100px 0 100px;
+
+#mainActividades__actividades3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 30px;
+    font-size: 26px;
 }
 
-.h-line3 {
-    border-top: #757575 solid thick;
-    width: 1100px;
-    position: absolute;
-    margin: 150px 100px 0 100px;
-}
-
-.mainActividades__aeroCombatRitmos {
-    display: flex;
-    flex-direction: row;
-    margin: 250px 100px 0 0;
-    position: relative;
-}
-
-.mainActividades__aeroCombat {
-    display: flex;
-    flex-direction: row;
-    margin: 0 215px 0 100px;
-    position: relative;
-    font-size: 36px;
-}
-
-.mainActividades__ritmos {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 0 200px;
-    position: relative;
-    font-size: 36px;
-}
-
-.mainActividades__aeroCombatRitmosDescripciones {
-    display: flex;
-    flex-direction: row;
-    position: absolute
-}
-
-.mainActividades__aeroCombatRitmosDescripcion3 {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 100px 0 100px;
-    position: relative;
-    width: 450px;
+#mainActividades__actividades4 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 50px;
+    text-align: justify;
 }
 
 .mainActividades__aeroCombatRitmosDescripcion4 {
-    display: flex;
-    flex-direction: row;
-    margin: 50px 100px 0 100px;
-    position: relative;
-    width: 450px;
+    font-size: 18px;
+
 }
 
-.mainActividades__yogaAbdominales {
-    display: flex;
-    flex-direction: row;
-    position: relative;
-    margin: 250px auto 50px 100px;
-    font-size: 36px;
+.mainActividades__aeroCombatRitmosDescripcion3 {
+    padding-right: 50px;
+    font-size: 18px;
 }
 
-.mainActividades__yoga {
-    display: flex;
-    flex-direction: row;
-    position: relative;
+#mainActividades__actividades5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 30px;
+    font-size: 26px;
 }
 
-.mainActividades__abdominales {
-    display: flex;
-    flex-direction: row;
-    margin-left: 550px;
-    position: relative;
-}
-
-.mainActividades__yogaAbdominalesDescripciones {
-    display: flex;
-    flex-direction: row;
-    position: absolute;
-}
-
-.mainActividades__yogaAbdominalesDescripcion5 {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 0 100px;
-    position: relative;
-    width: 450px;
+#mainActividades__actividades6 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 50px;
+    text-align: justify;
 }
 
 .mainActividades__yogaAbdominalesDescripcion6 {
-    display: flex;
-    flex-direction: row;
-    margin: 0 100px 0 100px;
-    position: relative;
-    width: 450px;
+    font-size: 18px;
 }
 
+.mainActividades__yogaAbdominalesDescripcion5 {
+    padding-right: 50px;
+    font-size: 18px;
+}
 
-.mainActividades__estiramientosDescripcion {
-    display: flex;
-    flex-direction: column;
-    position: relative;
+#mainActividades__actividades7 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    padding-bottom: 30px;
+    text-align: justify;
 }
 
 .mainActividades__estiramientos {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    font-size: 36px;
-    margin: 250px auto 50px 100px;
+    padding-bottom: 30px;
+    font-size: 26px;
 }
 
 .mainActividades__descripcion {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    margin: 0 100px;
-    width: 450px;
+    font-size: 18px;
 }
 
-.mainNosotros {
-    position: relative;
-    width: 100%;
-    height: 2000px;
+#mainNosotros {
+    padding: 150px 100px 250px 100px;
 }
 
-.mainNosotros__subtituloPrincipal {
-    display: flex;
-    flex-direction: row;
-}
-
-.mainNosotros__subtituloPrincipal {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    margin: 200px 800px 0 100px;
-    left: 350px;
-    font-size: 48px;
-    text-transform: uppercase;
-    width: 500px;
-}
-
-.mainNosotros__subtituloSecundario {
-    position: relative;
-    margin: 140px 100px 50px 100px; 
+.mainNosotros__tituloPrincipal {
     font-size: 36px;
+    text-align: center;
+    margin-bottom: 50px;
 }
 
-.mainNosotros__listaDesordenada {
-    position: relative;
-    margin: 0 100px;
-    font-size: 16px;
+.animate__fadeInDown {
+    animation: bounce;
+    animation-duration: 2s;
 }
 
-.mainNosotros__item {
-    margin: 10px 0;
+.mainNosotros__tituloSecundario {
+    font-size: 24px;
+    margin-bottom: 25px;
 }
 
 .mainNosotros__parrafos {
-    position: relative;
-    margin: 60px 100px;
-    font-size: 16px;
+    font-size: 18px;
+    margin-bottom: 50px;
     text-align: justify;
+}
+
+.mainNosotros__listaDesordenada {
+    font-size: 18px;
+    margin-bottom: 50px;
+}
+
+.mainNosotros__item {
+    margin-bottom: 10px;
 }
 
 footer {
     background-color: #212529;
     width: 100%;
     height: auto;
-    clear: both;
-    content:"";
-    display: table;
     font-family: 'Montserrat', sans-serif;
     color: #CCCDC5;
     position: absolute;
-    z-index: 2;
+    top: 2800px;  
 }
 
 footer div.footer__nuestrasRedes {
@@ -635,23 +558,7 @@ hr {
     top: 8px;
 }
 
-main div div h2 {
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 15px;
-}
 
-main div div ol {
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 15px;
-}
-
-main div div label {
-    margin-top: 30px;
-    margin-left: 100px;
-    padding: 15px;
-}
 
 
 

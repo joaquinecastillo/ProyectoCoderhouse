@@ -3,15 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>MYFIT</title>
-    <link a href="../css/styles.css" rel="stylesheet">   
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link a href="../CSS/styles.css" rel="stylesheet">   
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 </head> 
 <body>
     <header class="header">
         <nav class="header__navbar">
-            <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            <a href="../index/index.html">
+                <img src="../imagenes/LOGO.png" alt="" class="header__logo">
+            </a>
                 <ul class="header__menu">
                     <li><a class="header__menuItem" href="../index/index.html">INICIO</a></li>                 
                     <li><a class="header__menuItem" href="./asociate.html">ASOCIATE</a></li>
@@ -22,38 +26,34 @@
         </nav>                  
     </header>
     
-    <main class="mainActividades">
-        <section  class="mainActividades__subtituloPrincipal">
-            <h2>¡CONOCÉ NUESTRAS ACTIVIDADES!</h2>
+    <main id="mainActividades">
+
+        <section  id="mainActividades__tituloPrincipal">
+
+            <h2 class="animate__fadeInDown">¡CONOCÉ NUESTRAS ACTIVIDADES!</h2>
+
         </section>
 
-        <div class="v-line">
-            <hr>
-        </div>
+        <section id="mainActividades__actividades1">
+            <article class="efectoIzquierda">
+                <h3 class="animate__backInLeft">Entrenamiento Funcional</h3>  
+            </article>
 
-        <section class="mainActividades__entrenamientoFuncionalAeroLocal">
             <article>
-                <h3 class="mainActividades__entrenamientoFuncional">Entrenamiento Funcional</h3>             
-            </article>
-            <article>
-                <h3 class="mainActividades__aeroLocal">Aero Local</h3>
-            </article>
-        </section>
-
-        <section class="mainActividades__entrenamientoFuncionalAeroLocalDescripciones">
-            <article>
-                <p class="mainActividades__entrenamientoFuncionalAeroLocalDescripcion1">Vas a aprender movimientos y posturas que luego vas poder aplicar en tu vida diaria. Intensidad, eficiencia y dinamismo.</p>
-            </article>
-            <article>
-                <p class="mainActividades__entrenamientoFuncionalAeroLocalDescripcion2">Una clase que mejora y aumenta tu resistencia muscular. Si no te copa mucho la sala de musculación pero querés fortalecer los brazos y mejorar tu condición física, esta es la clase para vos.</p>
+                <h3 class="animate__backInRight">Aero Local</h3>
             </article>
         </section>
 
-        <div class="h-line1">
-            <hr>
-        </div>
+        <section id="mainActividades__actividades2">
+            <article>
+                <p class="animate__backInLeft-descripcion">Vas a aprender movimientos y posturas que luego vas poder aplicar en tu vida diaria. Intensidad, eficiencia y dinamismo.</p>
+            </article>
+            <article>
+                <p class="animate__backInRight-descripcion">Una clase que mejora y aumenta tu resistencia muscular. Si no te copa mucho la sala de musculación pero querés fortalecer los brazos y mejorar tu condición física, esta es la clase para vos.</p>
+            </article>
+        </section>
 
-        <section class="mainActividades__aeroCombatRitmos">
+        <section id="mainActividades__actividades3">
             <article>
                 <h3 class="mainActividades__aeroCombat">Aero Combat</h3>
             </article>
@@ -61,7 +61,8 @@
                 <h3  class="mainActividades__ritmos">Ritmos</h3>
             </article>
         </section>
-        <section class="mainActividades__aeroCombatRitmosDescripciones">
+
+        <section id="mainActividades__actividades4">
             <article>
                 <p class="mainActividades__aeroCombatRitmosDescripcion3">45 minutos de máxima intensidad y una variada combinación de golpes de manos y patadas para traspirar y llevar tu energía al 100%</p>
             </article>
@@ -70,11 +71,7 @@
             </article>
         </section>
 
-        <div class="h-line2">
-            <hr>
-        </div>
-
-        <section class="mainActividades__yogaAbdominales">
+        <section id="mainActividades__actividades5">
             <article  class="mainActividades__yoga">
                 <h3>Yoga</h3>
             </article>
@@ -82,7 +79,8 @@
                 <h3>Abdominales</h3>
             </article>
         </section>
-        <section class="mainActividades__yogaAbdominalesDescripciones">
+        
+        <section id="mainActividades__actividades6">
             <article>                
                 <p class="mainActividades__yogaAbdominalesDescripcion5">Conectá con tu respiración, date un momento solo para vos. Una serie de posturas que te permiten alcanzar una serenidad en tu mente y en tu cuerpo. Vas a tu ritmo, sin presiones.</p>
             </article>
@@ -92,19 +90,18 @@
             </article>
         </section>
 
-        <div class="h-line3">
-            <hr>
-        </div>
-
-        <section class="mainActividades__estiramientosDescripcion">
+        <section id="mainActividades__actividades7">
             <article class="mainActividades__estiramientos"> 
                 <h3>Estiramientos</h3>
             </article>
-            <article>
-                <p class="mainActividades__descripcion">Esta clase de 30 minutos te ayudará a fortalecer y mejorar la flexibilidad de tu cuerpo en forma integral a través de movimientos suaves y controlados. Además mejorarás tu postura de manera progresiva, ¡te ayudará a prevenir lesiones!
+            
+            <article class="mainActividades__descripcion">
+                <p>Esta clase de 30 minutos te ayudará a fortalecer y mejorar la flexibilidad de tu cuerpo en forma integral a través de movimientos suaves y controlados. Además mejorarás tu postura de manera progresiva, ¡te ayudará a prevenir lesiones!
                 </p>
             </article>
+
         </section>
+        
     </main>
 
     <footer class="footer">
@@ -135,5 +132,7 @@
             </p> 
         </div>        
     </footer>
+    <script src="https://code.iconify.design/iconify-icon/1.0.0/iconify-icon.min.js"></script>
+    <script src="../js/bootstrap.bundle.js"></script>
 </body>
 </html>
